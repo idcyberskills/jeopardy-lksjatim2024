@@ -46,7 +46,7 @@ LKSJATIM{str1n9s_4l4y_at4u_h4sh_a23b456d7f8a9f000001020bf5f6}
 ## Description
 Deskripsi SOAL disini
 
-(Optional)File : https://mega.nz/file/a2oixaib#Y7hu00KLlvhqVV43BzYYKcqxy8hEkUbZ1iL2rDg2wCM
+(Optional)File : https://drive.google.com/filesampledoesntexistdontgoherehehe
 
 ## Difficulty
 easy/medium/hard

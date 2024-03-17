@@ -1,0 +1,1 @@
+Run the file only by setting the permission to executable, and do `./chall0`

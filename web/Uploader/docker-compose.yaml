@@ -1,0 +1,31 @@
+version: '3.1'
+
+services:
+  lks-uploader:
+    container_name: lks-uploader
+    hostname: lks-uploader
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PASSWORD=LKSENJOYER
+    ports:
+      - "13000:8000"
+      - "13022:22"
+    environment:
+      - MONGO_URI=mongodb://ctf:asjdkjk23j1k3dsdn2h233j3jj@mongodb:27017/web_uploader?authSource=admin
+      - APP_URI=http://0.0.0.0:13000
+    volumes:
+      - ./flag.txt:/flag.txt:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    container_name: mongodb_ctf
+    image: mongo:4.4
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=ctf
+      - MONGO_INITDB_ROOT_PASSWORD=asjdkjk23j1k3dsdn2h233j3jj
+      - MONGO_INITDB_DATABASE=web_uploader

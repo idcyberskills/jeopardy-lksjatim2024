@@ -1,0 +1,1 @@
+flag = "LKS{EnCrYpt1On_i5_d4_wAy_t0_Go}"

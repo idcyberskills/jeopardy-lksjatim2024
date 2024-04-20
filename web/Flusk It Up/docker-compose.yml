@@ -1,0 +1,9 @@
+version: "3"
+services:
+  chall:
+    build:
+      context: .
+      args:
+        - PASSWORD=LKSENJOYER_2024
+    ports:
+      - "14000:80"
